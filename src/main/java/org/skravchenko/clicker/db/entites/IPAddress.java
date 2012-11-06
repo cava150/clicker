@@ -1,12 +1,14 @@
 package org.skravchenko.clicker.db.entites;
 
+import org.hibernate.annotations.GenericGenerator;
+import org.hibernate.annotations.Parameter;
+
 import javax.persistence.*;
 import java.sql.Date;
 
 @Entity
 @Table(name = "IpAddress")
 public class IPAddress {
-
     private Long id;
     private String ipAddress;
     private Date time;
@@ -30,7 +32,7 @@ public class IPAddress {
     }
 
     @Id
-    @GeneratedValue
+    @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(name="Id")
     public Long getId() {
         return id;
