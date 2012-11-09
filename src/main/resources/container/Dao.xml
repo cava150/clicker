@@ -7,4 +7,8 @@
     <bean id="IpAddressDaoImpl" class="org.skravchenko.clicker.db.dao.impl.IpAddressDaoImpl">
         <property name="sesionFactory" ref="mySessionFactory" />
     </bean>
+
+    <bean id="SiteDaoImpl" class="org.skravchenko.clicker.db.dao.impl.SiteDaoImpl">
+        <property name="sesionFactory" ref="mySessionFactory" />
+    </bean>
 </beans>

@@ -7,9 +7,6 @@ import org.skravchenko.clicker.db.entites.IPAddress;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
-import java.sql.Date;
-import java.util.Calendar;
-
 public class Main {
     private static Logger _log = Logger.getLogger(Main.class);
 

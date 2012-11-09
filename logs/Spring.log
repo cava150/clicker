@@ -1,0 +1,128 @@
+12:26:52,997  INFO ClassPathXmlApplicationContext:456 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@84abc9: startup date [Fri Nov 09 12:26:52 EET 2012]; root of context hierarchy
+12:26:53,041  INFO XmlBeanDefinitionReader:315 - Loading XML bean definitions from class path resource [container/Main.xml]
+12:26:53,110  INFO XmlBeanDefinitionReader:315 - Loading XML bean definitions from class path resource [container/Data.xml]
+12:26:53,129  INFO XmlBeanDefinitionReader:315 - Loading XML bean definitions from class path resource [container/Util.xml]
+12:26:53,150  INFO XmlBeanDefinitionReader:315 - Loading XML bean definitions from class path resource [container/Dao.xml]
+12:26:53,160  INFO XmlBeanDefinitionReader:315 - Loading XML bean definitions from class path resource [container/Data.xml]
+12:26:53,173  INFO XmlBeanDefinitionReader:315 - Loading XML bean definitions from class path resource [container/Util.xml]
+12:26:53,184  INFO DefaultListableBeanFactory:618 - Overriding bean definition for bean 'myDataSource': replacing [Generic bean: class [org.apache.commons.dbcp.BasicDataSource]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=close; defined in class path resource [container/Data.xml]] with [Generic bean: class [org.apache.commons.dbcp.BasicDataSource]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=close; defined in class path resource [container/Data.xml]]
+12:26:53,199  INFO DefaultListableBeanFactory:618 - Overriding bean definition for bean 'mySessionFactory': replacing [Generic bean: class [org.springframework.orm.hibernate3.annotation.AnnotationSessionFactoryBean]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in class path resource [container/Data.xml]] with [Generic bean: class [org.springframework.orm.hibernate3.annotation.AnnotationSessionFactoryBean]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in class path resource [container/Data.xml]]
+12:26:53,318  INFO PropertyPlaceholderConfigurer:177 - Loading properties file from class path resource [db.properties]
+12:26:53,321  INFO PropertyPlaceholderConfigurer:177 - Loading properties file from class path resource [db.properties]
+12:26:53,326  INFO DefaultListableBeanFactory:555 - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@1fc2fb: defining beans [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,myDataSource,mySessionFactory,org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#1,IpAddressDaoImpl]; root of factory hierarchy
+12:26:53,391  INFO Version:15 - Hibernate Annotations 3.4.0.GA
+12:26:53,397  INFO Environment:560 - Hibernate 3.3.2.GA
+12:26:53,398  INFO Environment:593 - hibernate.properties not found
+12:26:53,400  INFO Environment:771 - Bytecode provider name : javassist
+12:26:53,402  INFO Environment:652 - using JDK 1.4 java.sql.Timestamp handling
+12:26:53,445  INFO Version:14 - Hibernate Commons Annotations 3.1.0.GA
+12:26:53,470  INFO AnnotationConfiguration:369 - Hibernate Validator not found: ignoring
+12:26:53,473  INFO AnnotationSessionFactoryBean:731 - Building new Hibernate SessionFactory
+12:26:53,475  INFO HibernateSearchEventListenerRegister:53 - Unable to find org.hibernate.search.event.FullTextIndexEventListener on the classpath. Hibernate Search is not enabled.
+12:26:53,487  INFO AnnotationBinder:419 - Binding entity from annotated class: org.skravchenko.clicker.db.entites.Site
+12:26:53,507  INFO EntityBinder:422 - Bind entity org.skravchenko.clicker.db.entites.Site on table Sites
+12:26:53,533  INFO AnnotationBinder:419 - Binding entity from annotated class: org.skravchenko.clicker.db.entites.IPAddress
+12:26:53,533  INFO EntityBinder:422 - Bind entity org.skravchenko.clicker.db.entites.IPAddress on table IpAddress
+12:26:53,567  INFO ConnectionProviderFactory:95 - Initializing connection provider: org.springframework.orm.hibernate3.LocalDataSourceConnectionProvider
+12:26:53,739  INFO SettingsFactory:114 - RDBMS: MySQL, version: 5.5.25a
+12:26:53,739  INFO SettingsFactory:115 - JDBC driver: MySQL-AB JDBC Driver, version: mysql-connector-java-5.1.6 ( Revision: ${svn.Revision} )
+12:26:53,752  INFO Dialect:175 - Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+12:26:53,755  INFO TransactionFactoryFactory:59 - Using default transaction strategy (direct JDBC transactions)
+12:26:53,756  INFO TransactionManagerLookupFactory:80 - No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+12:26:53,759  INFO SettingsFactory:161 - Automatic flush during beforeCompletion(): disabled
+12:26:53,759  INFO SettingsFactory:165 - Automatic session close at end of transaction: disabled
+12:26:53,759  INFO SettingsFactory:172 - JDBC batch size: 15
+12:26:53,759  INFO SettingsFactory:175 - JDBC batch updates for versioned data: disabled
+12:26:53,760  INFO SettingsFactory:180 - Scrollable result sets: enabled
+12:26:53,760  INFO SettingsFactory:188 - JDBC3 getGeneratedKeys(): enabled
+12:26:53,760  INFO SettingsFactory:196 - Connection release mode: on_close
+12:26:53,761  INFO SettingsFactory:220 - Maximum outer join fetch depth: 2
+12:26:53,761  INFO SettingsFactory:223 - Default batch fetch size: 1
+12:26:53,761  INFO SettingsFactory:227 - Generate SQL with comments: disabled
+12:26:53,764  INFO SettingsFactory:231 - Order SQL updates by primary key: disabled
+12:26:53,765  INFO SettingsFactory:235 - Order SQL inserts for batching: disabled
+12:26:53,765  INFO SettingsFactory:397 - Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+12:26:53,766  INFO ASTQueryTranslatorFactory:47 - Using ASTQueryTranslatorFactory
+12:26:53,767  INFO SettingsFactory:243 - Query language substitutions: {}
+12:26:53,813  INFO SettingsFactory:248 - JPA-QL strict compliance: disabled
+12:26:53,813  INFO SettingsFactory:253 - Second-level cache: enabled
+12:26:53,813  INFO SettingsFactory:257 - Query cache: disabled
+12:26:53,814  INFO SettingsFactory:382 - Cache region factory : org.hibernate.cache.impl.NoCachingRegionFactory
+12:26:53,814  INFO SettingsFactory:267 - Optimize cache for minimal puts: disabled
+12:26:53,815  INFO SettingsFactory:276 - Structured second-level cache entries: disabled
+12:26:53,819  INFO SettingsFactory:296 - Echoing all SQL to stdout
+12:26:53,820  INFO SettingsFactory:305 - Statistics: disabled
+12:26:53,820  INFO SettingsFactory:309 - Deleted entity synthetic identifier rollback: disabled
+12:26:53,821  INFO SettingsFactory:324 - Default entity-mode: pojo
+12:26:53,821  INFO SettingsFactory:328 - Named query checking : enabled
+12:26:53,863  INFO SessionFactoryImpl:193 - building session factory
+12:26:53,974  INFO SessionFactoryObjectFactory:105 - Not binding factory to JNDI, no JNDI name configured
+12:26:53,979  INFO SchemaExport:226 - Running hbm2ddl schema export
+12:26:53,979  INFO SchemaExport:251 - exporting generated schema to database
+12:26:54,134  INFO SchemaExport:268 - schema export complete
+12:26:54,142  INFO IpAddressDaoImpl:18 - Add IpAddress Entity started. Id = null
+12:26:54,205  INFO IpAddressDaoImpl:20 - Add IpAddress Entity finished. Id = 1
+12:27:42,783  INFO ClassPathXmlApplicationContext:456 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@84abc9: startup date [Fri Nov 09 12:27:42 EET 2012]; root of context hierarchy
+12:27:42,825  INFO XmlBeanDefinitionReader:315 - Loading XML bean definitions from class path resource [container/Main.xml]
+12:27:42,895  INFO XmlBeanDefinitionReader:315 - Loading XML bean definitions from class path resource [container/Data.xml]
+12:27:42,914  INFO XmlBeanDefinitionReader:315 - Loading XML bean definitions from class path resource [container/Util.xml]
+12:27:42,935  INFO XmlBeanDefinitionReader:315 - Loading XML bean definitions from class path resource [container/Dao.xml]
+12:27:42,946  INFO XmlBeanDefinitionReader:315 - Loading XML bean definitions from class path resource [container/Data.xml]
+12:27:42,956  INFO XmlBeanDefinitionReader:315 - Loading XML bean definitions from class path resource [container/Util.xml]
+12:27:42,969  INFO DefaultListableBeanFactory:618 - Overriding bean definition for bean 'myDataSource': replacing [Generic bean: class [org.apache.commons.dbcp.BasicDataSource]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=close; defined in class path resource [container/Data.xml]] with [Generic bean: class [org.apache.commons.dbcp.BasicDataSource]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=close; defined in class path resource [container/Data.xml]]
+12:27:43,019  INFO DefaultListableBeanFactory:618 - Overriding bean definition for bean 'mySessionFactory': replacing [Generic bean: class [org.springframework.orm.hibernate3.annotation.AnnotationSessionFactoryBean]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in class path resource [container/Data.xml]] with [Generic bean: class [org.springframework.orm.hibernate3.annotation.AnnotationSessionFactoryBean]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in class path resource [container/Data.xml]]
+12:27:43,135  INFO PropertyPlaceholderConfigurer:177 - Loading properties file from class path resource [db.properties]
+12:27:43,138  INFO PropertyPlaceholderConfigurer:177 - Loading properties file from class path resource [db.properties]
+12:27:43,143  INFO DefaultListableBeanFactory:555 - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@1f3aa07: defining beans [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,myDataSource,mySessionFactory,org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#1,IpAddressDaoImpl]; root of factory hierarchy
+12:27:43,224  INFO Version:15 - Hibernate Annotations 3.4.0.GA
+12:27:43,232  INFO Environment:560 - Hibernate 3.3.2.GA
+12:27:43,233  INFO Environment:593 - hibernate.properties not found
+12:27:43,236  INFO Environment:771 - Bytecode provider name : javassist
+12:27:43,239  INFO Environment:652 - using JDK 1.4 java.sql.Timestamp handling
+12:27:43,287  INFO Version:14 - Hibernate Commons Annotations 3.1.0.GA
+12:27:43,312  INFO AnnotationConfiguration:369 - Hibernate Validator not found: ignoring
+12:27:43,315  INFO AnnotationSessionFactoryBean:731 - Building new Hibernate SessionFactory
+12:27:43,316  INFO HibernateSearchEventListenerRegister:53 - Unable to find org.hibernate.search.event.FullTextIndexEventListener on the classpath. Hibernate Search is not enabled.
+12:27:43,328  INFO AnnotationBinder:419 - Binding entity from annotated class: org.skravchenko.clicker.db.entites.Site
+12:27:43,350  INFO EntityBinder:422 - Bind entity org.skravchenko.clicker.db.entites.Site on table Sites
+12:27:43,376  INFO AnnotationBinder:419 - Binding entity from annotated class: org.skravchenko.clicker.db.entites.IPAddress
+12:27:43,377  INFO EntityBinder:422 - Bind entity org.skravchenko.clicker.db.entites.IPAddress on table IpAddress
+12:27:43,409  INFO ConnectionProviderFactory:95 - Initializing connection provider: org.springframework.orm.hibernate3.LocalDataSourceConnectionProvider
+12:27:43,589  INFO SettingsFactory:114 - RDBMS: MySQL, version: 5.5.25a
+12:27:43,590  INFO SettingsFactory:115 - JDBC driver: MySQL-AB JDBC Driver, version: mysql-connector-java-5.1.6 ( Revision: ${svn.Revision} )
+12:27:43,603  INFO Dialect:175 - Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+12:27:43,606  INFO TransactionFactoryFactory:59 - Using default transaction strategy (direct JDBC transactions)
+12:27:43,607  INFO TransactionManagerLookupFactory:80 - No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+12:27:43,625  INFO SettingsFactory:161 - Automatic flush during beforeCompletion(): disabled
+12:27:43,625  INFO SettingsFactory:165 - Automatic session close at end of transaction: disabled
+12:27:43,625  INFO SettingsFactory:172 - JDBC batch size: 15
+12:27:43,626  INFO SettingsFactory:175 - JDBC batch updates for versioned data: disabled
+12:27:43,626  INFO SettingsFactory:180 - Scrollable result sets: enabled
+12:27:43,627  INFO SettingsFactory:188 - JDBC3 getGeneratedKeys(): enabled
+12:27:43,627  INFO SettingsFactory:196 - Connection release mode: on_close
+12:27:43,627  INFO SettingsFactory:220 - Maximum outer join fetch depth: 2
+12:27:43,627  INFO SettingsFactory:223 - Default batch fetch size: 1
+12:27:43,627  INFO SettingsFactory:227 - Generate SQL with comments: disabled
+12:27:43,628  INFO SettingsFactory:231 - Order SQL updates by primary key: disabled
+12:27:43,631  INFO SettingsFactory:235 - Order SQL inserts for batching: disabled
+12:27:43,631  INFO SettingsFactory:397 - Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+12:27:43,633  INFO ASTQueryTranslatorFactory:47 - Using ASTQueryTranslatorFactory
+12:27:43,633  INFO SettingsFactory:243 - Query language substitutions: {}
+12:27:43,633  INFO SettingsFactory:248 - JPA-QL strict compliance: disabled
+12:27:43,633  INFO SettingsFactory:253 - Second-level cache: enabled
+12:27:43,679  INFO SettingsFactory:257 - Query cache: disabled
+12:27:43,679  INFO SettingsFactory:382 - Cache region factory : org.hibernate.cache.impl.NoCachingRegionFactory
+12:27:43,679  INFO SettingsFactory:267 - Optimize cache for minimal puts: disabled
+12:27:43,679  INFO SettingsFactory:276 - Structured second-level cache entries: disabled
+12:27:43,682  INFO SettingsFactory:296 - Echoing all SQL to stdout
+12:27:43,682  INFO SettingsFactory:305 - Statistics: disabled
+12:27:43,682  INFO SettingsFactory:309 - Deleted entity synthetic identifier rollback: disabled
+12:27:43,682  INFO SettingsFactory:324 - Default entity-mode: pojo
+12:27:43,683  INFO SettingsFactory:328 - Named query checking : enabled
+12:27:43,705  INFO SessionFactoryImpl:193 - building session factory
+12:27:43,818  INFO SessionFactoryObjectFactory:105 - Not binding factory to JNDI, no JNDI name configured
+12:27:43,822  INFO SchemaExport:226 - Running hbm2ddl schema export
+12:27:43,823  INFO SchemaExport:251 - exporting generated schema to database
+12:27:43,960  INFO SchemaExport:268 - schema export complete
+12:27:43,965  INFO IpAddressDaoImpl:18 - Add IpAddress Entity started. Id = null
+12:27:44,024  INFO IpAddressDaoImpl:20 - Add IpAddress Entity finished. Id = 1

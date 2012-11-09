@@ -4,11 +4,12 @@
     <facet type="Spring" name="Spring">
       <configuration>
         <fileset id="fileset1" name="My Fileset" removed="false">
-          <file>file://$MODULE_DIR$/src/main/resources/container/Main.xml</file>
           <file>file://$MODULE_DIR$/src/main/resources/container/Data.xml</file>
+          <file>file://$MODULE_DIR$/src/main/resources/container/Dao.xml</file>
+          <file>file://$MODULE_DIR$/src/main/resources/container/Main.xml</file>
           <file>file://$MODULE_DIR$/src/main/resources/container/Util.xml</file>
           <file>file://$MODULE_DIR$/src/main/resources/container/Services.xml</file>
-          <file>file://$MODULE_DIR$/src/main/resources/container/Dao.xml</file>
+          <file>jar://$MAVEN_REPOSITORY$/org/springframework/spring-jdbc/2.0.6/spring-jdbc-2.0.6.jar!/org/springframework/jdbc/support/sql-error-codes.xml</file>
         </fileset>
       </configuration>
     </facet>
@@ -17,17 +18,18 @@
     <output url="file://$MODULE_DIR$/target/classes" />
     <output-test url="file://$MODULE_DIR$/target/test-classes" />
     <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/src/main/tests" isTestSource="true" />
       <sourceFolder url="file://$MODULE_DIR$/src/main/java" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/main/resources" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/src/test/java" isTestSource="true" />
-      <sourceFolder url="file://$MODULE_DIR$/src/test/resources" isTestSource="true" />
       <excludeFolder url="file://$MODULE_DIR$/target" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="Maven: junit:junit:4.10" level="project" />
+    <orderEntry type="library" name="Maven: org.hamcrest:hamcrest-core:1.1" level="project" />
     <orderEntry type="library" name="Maven: log4j:log4j:1.2.14" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-context:3.0.5.RELEASE" level="project" />
-    <orderEntry type="library" name="Maven: org.springframework:spring-aop:3.0.5.RELEASE" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework:spring-aop:3.1.2.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: aopalliance:aopalliance:1.0" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-asm:3.0.5.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-beans:3.0.5.RELEASE" level="project" />
@@ -54,6 +56,8 @@
     <orderEntry type="library" name="Maven: org.springframework:spring-tx:2.5.1" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-jdbc:2.0.6" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-dao:2.0.6" level="project" />
+    <orderEntry type="library" name="Maven: org.aspectj:aspectjtools:1.6.2" level="project" />
+    <orderEntry type="library" name="Maven: org.mockito:mockito-all:1.9.5-rc1" level="project" />
   </component>
 </module>
 
